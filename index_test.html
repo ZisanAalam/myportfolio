@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Section</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        #certification {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            border: none;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .card-text {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        /* Responsive Design */
+        
+        @media (min-width: 768px) {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .card {
+                margin: 15px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .card {
+                margin: 20px 0;
+            }
+        }
+        /* Animation for fading in */
+        
+        [data-aos] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+        
+        [data-aos].aos-animate {
+            opacity: 1;
+        }
+        
+        [data-aos="fade-up"] {
+            transform: translateY(50px);
+        }
+        
+        [data-aos].aos-animate[data-aos="fade-up"] {
+            transform: translateY(0);
+        }
+        /* Custom AOS delay */
+        
+        [data-aos-delay="100"] {
+            transition-delay: 0.1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="certification" class="">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certification</h2>
+            </div>
+
+            <div class="row">
+
+                <!-- Column 1 -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="card mx-auto">
+                        <img class="card-img-top" src="assets/img/android_java.jpg" alt="Java for Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Java for Android</h5>
+                            <p class="card-text">by Vanderbilt University</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/GTEWECCRBEZK" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="card my-3 mx-auto">
+                        <img class="card-img-top" src="assets/img/angularjs.jpg" alt="AngularJS">
+                        <div class="card-body">
+                            <h5 class="card-title">Single Page Web Applications with AngularJS</h5>
+                            <p class="card-text">by Johns Hopkins University</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/A7Z7E6HVKXE5" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card mx-auto">
+                        <img class="card-img-top" src="assets/img/data_science.jpg" alt="Data Science in Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Data Science in Python</h5>
+                            <p class="card-text">by University of Michigan</p>
+                            <a href="https://coursera.org/share/389b465913216c260c73df5bd7f6d12e" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="card my-3 mx-auto">
+                        <img class="card-img-top" src="assets/img/java.png" alt="Java(Basic)">
+                        <div class="card-body">
+                            <h5 class="card-title">Java (Basic)</h5>
+                            <p class="card-text">by HackerRank</p>
+                            <a href="https://www.hackerrank.com/certificates/fb7d7a5e3307" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card mx-auto">
+                        <img class="card-img-top" src="assets/img/nodejs_mongo.jpg" alt="NodeJS and MongoDB">
+                        <div class="card-body">
+                            <h5 class="card-title">Server-side Development with NodeJS</h5>
+                            <p class="card-text">by The Hong Kong University of Science and Technology</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/KCTH22GH76Y3" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="card my-3 mx-auto">
+                        <img class="card-img-top" src="assets/img/digitalfootprint.jpg" alt="Digital Footprint">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Footprint</h5>
+                            <p class="card-text">by The University of Edinburgh</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/SKAZKJ6G49KU" class="btn btn-primary" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

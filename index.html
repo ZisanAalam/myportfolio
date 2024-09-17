@@ -75,7 +75,7 @@
         <div class="hero-container" data-aos="fade-in">
             <h1>Hi,</h1>
             <h1>I'm Zisan,</h1>
-            <p><span class="typed" data-typed-items="Computer Science Engineer"></span></p>
+            <p><span class="typed" data-typed-items="Software Engineer"></span></p>
         </div>
     </section>
     <!-- End Hero -->
@@ -109,12 +109,18 @@
                                 <ul>
                                     <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 26 April 1997</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +977 9861525232</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Address:</strong> Kanchanrup, Saptari, Nepal</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Address:</strong> Maharajgunj, Kathmandu, Nepal</li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 24</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong>
+                                        <span id="age"></span>
+                                        <script>
+                                            document.getElementById('age').textContent = new Date().getFullYear() - 1997;
+                                        </script>
+                                    </li>
+
                                     <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> aalamzisan@gmail.com</li>
 
@@ -140,69 +146,176 @@
                     <p>Check out some of the skills I have acquired!!</p>
                 </div>
 
-                <div class="row skills-content">
-
-                    <div class="col-lg-4" data-aos="fade-up">
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-html5"></i> HTML</h4>
+                <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/java.svg" alt="Java">
+                            <p>Java</p>
                         </div>
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-css3"></i> CSS</h4>
-                        </div>
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-bootstrap"></i> Bootstrap</h4>
-                        </div>
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-js"></i> Javascript</h4>
-                        </div>
-                        <div class="fw-bold">
-                            <h4><i class="fas fa-database"></i> MySql</h4>
-                        </div>
-
-
                     </div>
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-python"></i> Python</h4>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/python.svg" alt="Python">
+                            <p>Python</p>
                         </div>
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-java"></i> Java</h4>
-                        </div>
-
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-php"></i> PHP</h4>
-                        </div>
-                        <div class="fw-bold">
-                            <h4><i class="fab fa-node-js"></i> Nodejs</h4>
-                        </div>
-
-                        <div class="fw-bold">
-                            <h4> <img src="assets/img/c++.png" alt="" width="40" height="40"> C/C++</h4>
-                        </div>
-
                     </div>
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="fw-bold">
-                            <h4> <img src="assets/img/dj-logo.png" alt="" width="50" height="40">Django Framework</h4>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/Javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
                         </div>
+                    </div>
 
-                        <div class="fw-bold">
-                            <h4> <img src="assets/img/spring-logo.png" alt="" width="50" height="40">Spring Framework</h4>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/typescript.svg" alt="TypeScript">
+                            <p>TypeScript</p>
                         </div>
+                    </div>
+                </div>
 
+                <div class="row justify-content-start" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/aws.svg" alt="aws">
+                            <p>AWS Services</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/groovy.svg" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/groovy.svg" alt="CSS">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/groovy.svg" alt="Boostrap">
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/nodejs.svg" alt="Node.js">
+                            <p>Node.js</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/rxjava.png" alt="RxJava">
+                            <p>RxJava</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/vertx-logo.svg" alt="vert.x">
+                            <p>Vert.X</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/django.png" alt="Django">
+                            <p>Django</p>
+                        </div>
                     </div>
 
                 </div>
 
+
+                <div class="row justify-content-start" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/grails.svg" alt="grails">
+                            <p>Grails</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/spring-boot.png" alt="RxJava">
+                            <p>Spring Boot</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/angular.svg" alt="Angular">
+                            <p>Angular</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/react.svg" alt="React">
+                            <p>React</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/mysql_logo.svg" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/mongodb.svg" alt="mongodb">
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/postman.svg" alt="Postman">
+                            <p>Postman</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/jmeter.svg" alt="Jmeter">
+                            <p>JMeter</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row justify-content-start" data-aos="fade-up" data-aos-duration="1000" data-aos="juggle">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/git.svg" alt="git">
+                            <p>Git</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="skill-card">
+                            <img src="assets/img/icon/intellij.svg" alt="Intellij">
+                            <p>Intellij</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- End Skills Section -->
@@ -215,8 +328,7 @@
 
                 <div class="section-title">
                     <h2>Work</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
+                    <p>Check out some of my personal works</p>
                 </div>
 
                 <div class="row" data-aos="fade-up">
@@ -242,7 +354,6 @@
                             </div>
                         </div>
                     </div>
-
 
 
                     <div class="col-lg-4 col-md-6 work-item filter-java">
@@ -316,92 +427,76 @@
         <!-- ======= Certification Section ======= -->
         <section id="certification" class="">
             <div class="container">
-
                 <div class="section-title">
                     <h2>Certification</h2>
                 </div>
 
                 <div class="row">
 
+                    <!-- Column 1 -->
                     <div class="col-lg-4" data-aos="fade-up">
-                        <div class="card mx-auto" style="width: 20rem;">
-                            <img class="card-img-top" src="assets/img/android_java.jpg" alt="Card image cap" height="100">
-                            <hr>
+                        <div class="card mx-auto">
+                            <img class="card-img-top" src="assets/img/java_android.webp" alt="Java for Android">
                             <div class="card-body">
-                                <h5 class="card-title font-weight-bold">Java for Android</h5>
-                                <p class="card-text h6 font-italic text-muted">by Vanderbilt University</p>
-                                <a href="https://www.coursera.org/account/accomplishments/verify/GTEWECCRBEZK" class="btn btn-primary">View Certificate</a>
+                                <h5 class="card-title">Java for Android</h5>
+                                <p class="card-text">by Vanderbilt University</p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/GTEWECCRBEZK" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
                         </div>
 
-                        <div class="card my-3 mx-auto" style="width: 20rem;">
-                            <img class="card-img-top" src="assets/img/angularjs.jpg" alt="Card image cap" height="100">
-                            <hr>
+                        <div class="card my-3 mx-auto">
+                            <img class="card-img-top" src="assets/img/angularjs.jpg" alt="AngularJS">
                             <div class="card-body">
-                                <h5 class="card-title font-weight-bold">Single Page Web Applications with AngularJS </h5>
-                                <p class="card-text h6 font-italic">by Johns Hopkins University</p>
-                                <a href="https://www.coursera.org/account/accomplishments/verify/A7Z7E6HVKXE5" class="btn btn-primary">View Certificate</a>
+                                <h5 class="card-title">Single Page Web Applications with AngularJS</h5>
+                                <p class="card-text">by Johns Hopkins University</p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/A7Z7E6HVKXE5" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
                         </div>
-
-
                     </div>
 
-
+                    <!-- Column 2 -->
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-6" data-aos="fade-up">
-                            <div class="card mx-auto" style="width: 20rem;">
-                                <img class="card-img-top" src="assets/img/data_science.jpg" alt="Card image cap" height="100">
-                                <hr>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold">Introduction to Data Science in Python</h5>
-                                    <p class="card-text h6 font-italic text-muted">by University of Michigan</p>
-                                    <a href="https://coursera.org/share/389b465913216c260c73df5bd7f6d12e" class="btn btn-primary">View Certificate</a>
-                                </div>
+                        <div class="card mx-auto">
+                            <img class="card-img-top" src="assets/img/data_science.jpg" alt="Data Science in Python">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Data Science in Python</h5>
+                                <p class="card-text">by University of Michigan</p>
+                                <a href="https://coursera.org/share/389b465913216c260c73df5bd7f6d12e" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
+                        </div>
 
-                            <div class="card my-3 mx-auto" style="width: 20rem;">
-                                <img class="card-img-top" src="assets/img/java.png" alt="Card image cap" height="100">
-                                <hr>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold">Java(Basic)</h5>
-                                    <p class="card-text h6 font-italic">by HackerRank</p>
-                                    <a href="https://www.hackerrank.com/certificates/fb7d7a5e3307" class="btn btn-primary">View Certificate</a>
-                                </div>
+                        <div class="card my-3 mx-auto">
+                            <img class="card-img-top" src="assets/img/java.png" alt="Java(Basic)">
+                            <div class="card-body">
+                                <h5 class="card-title">Java (Basic)</h5>
+                                <p class="card-text">by HackerRank</p>
+                                <a href="https://www.hackerrank.com/certificates/fb7d7a5e3307" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
-
                         </div>
                     </div>
 
-
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-6" data-aos="fade-up">
-                            <div class="card mx-auto" style="width: 20rem;">
-                                <img class="card-img-top" src="assets/img/nodejs_mongo.jpg" alt="Card image cap" height="100">
-                                <hr>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold">Server-side Development with NodeJS, Express and </h5>
-                                    <p class="card-text h6 font-italic text-muted">by The Hong Kong University of Science and Technology</p>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/KCTH22GH76Y3" class="btn btn-primary">View Certificate</a>
-                                </div>
+                    <!-- Column 3 -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card mx-auto">
+                            <img class="card-img-top" src="assets/img/nodejs_mongo.webp" alt="NodeJS and MongoDB">
+                            <div class="card-body">
+                                <h5 class="card-title">Server-side Development with NodeJS</h5>
+                                <p class="card-text">by The Hong Kong University of Science and Technology</p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/KCTH22GH76Y3" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
+                        </div>
 
-                            <div class="card my-3 mx-auto" style="width: 20rem;">
-                                <img class="card-img-top" src="assets/img/digitalfootprint.jpg" alt="Card image cap" height="100">
-                                <hr>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold">Digital Footprint </h5>
-                                    <p class="card-text h6 font-italic">by The University of Edinburgh</p>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/SKAZKJ6G49KU" class="btn btn-primary">View Certificate</a>
-                                </div>
+                        <div class="card my-3 mx-auto">
+                            <img class="card-img-top" src="assets/img/digitalfootprint.jpg" alt="Digital Footprint">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Footprint</h5>
+                                <p class="card-text">by The University of Edinburgh</p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/SKAZKJ6G49KU" class="btn btn-primary" target="_blank">View Certificate</a>
                             </div>
-
                         </div>
                     </div>
-
 
                 </div>
-
             </div>
         </section>
         <!-- End Certification Section -->
@@ -424,7 +519,7 @@
                             <div class="address">
                                 <i class="icofont-google-map"></i>
                                 <h4>Location:</h4>
-                                <p>Ranibari, Samakhusi, Kathmandu</p>
+                                <p>Maharajgunj, Kathmandu</p>
                             </div>
 
                             <div class="email">
@@ -438,8 +533,7 @@
                                 <h4>Call:</h4>
                                 <p>+977 9861525232</p>
                             </div>
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.536228138619!2d85.31716946470993!3d27.731602081033238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1922329dff33%3A0x9a89d65162285ba6!2sRanibari%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1618218024212!5m2!1sen!2snp"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.536228138619!2d85.31716946470993!3d27.731602081033238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1922329dff33%3A0x9a89d65162285ba6!2sMaharajgung%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1618218024212!5m2!1sen!2snp"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
