@@ -8,29 +8,46 @@ export const navItems = [
 ]
 
 export const careerFacts = [
-  { value: '3+ years', label: 'Professional software engineering' },
-  { value: 'Java & APIs', label: 'Primary backend focus' },
-  { value: 'AI & ML', label: 'Applied data-driven solutions' },
-  { value: 'AWS', label: 'Cloud deployment and operations' },
+  { value: '3+ years', label: 'Professional Software Engineering' },
+  { value: 'Java & APIs', label: 'Backend Engineering' },
+  { value: 'AWS & Kubernetes', label: 'Cloud Engineering' },
+  { value: 'AI & ML', label: 'Applied Intelligent Systems' },
 ]
 
 export const experience = [
   {
     company: 'Cedar Gate Technologies',
     role: 'Software Engineer',
-    period: 'Feb 2022 - Feb 2025',
+    period: 'Feb 2023 - Feb 2025',
     location: 'Kathmandu, Nepal · US healthcare technology company',
     summary:
       'Worked across backend services, web applications, databases and cloud infrastructure in a production healthcare technology environment.',
     highlights: [
-      'Designed and developed a reporting microservice with React, Node.js and MongoDB, bringing together data from Elasticsearch and Jira.',
+      'Designed and developed a reporting microservice using React, Node.js and MongoDB, integrating data from Elasticsearch and Jira.',
       'Migrated MySQL from version 5 to 8 and improved slow queries and database data flows.',
       'Upgraded Vert.x from 3.3.2 to 4.5.10 across multiple services while managing dependencies and backward compatibility.',
-      'Built Python and Bash automation for recurring operational tasks and supported release, testing and change-control work.',
+      'Built Python and Bash automation for recurring operational workflows.',
+      'Supported recurring daily, weekly and monthly client-processing jobs, investigating failures and delays to help ensure application results and data were delivered reliably and on schedule.',
       'Worked with AWS services including EC2, Lambda, API Gateway, S3, SQS, ECR and ECS.',
-      'Delivered features and fixes across Node.js, RxJava, Vert.x and Grails services, with React and Angular on the frontend.',
+      'Delivered features and resolved defects across Node.js, RxJava, Vert.x and Grails services, with React and Angular on the frontend.',
+      'Participated in testing, debugging, release management and production support.',
     ],
     stack: ['Java', 'Vert.x', 'RxJava', 'Grails', 'Node.js', 'React', 'Angular', 'MySQL', 'MongoDB', 'Elasticsearch', 'AWS'],
+  },
+  {
+    company: 'Cedar Gate Technologies',
+    role: 'Associate Software Engineer',
+    period: 'Feb 2022 - Feb 2023',
+    location: 'Kathmandu, Nepal · US healthcare technology company',
+    summary:
+      'Built a foundation in production software engineering across services, databases, automation and client-processing operations.',
+    highlights: [
+      'Built Python and Bash automation for recurring operational workflows.',
+      'Supported recurring daily, weekly and monthly client-processing jobs, investigating failures and delays to help ensure application results and data were delivered reliably and on schedule.',
+      'Delivered features and resolved defects across Node.js, RxJava, Vert.x and Grails services, with React and Angular on the frontend.',
+      'Participated in testing, debugging, release management and production support.',
+    ],
+    stack: ['Java', 'Vert.x', 'RxJava', 'Grails', 'Node.js', 'React', 'Angular', 'Python', 'Bash'],
   },
   {
     company: 'Leapfrog Technology',
@@ -50,7 +67,8 @@ export const experience = [
 export const projects = [
   {
     meta: 'Industry capstone · 2026',
-    title: 'Asset Data Quality for Reliability Modelling',
+    title: 'Asset Data Quality & Reliability Modelling — SA Power Networks',
+    partner: 'SA Power Networks',
     description:
       'Capstone work with SA Power Networks exploring how incomplete asset and failure data affects reliability modelling, with a focus on data quality, imputation and model evaluation.',
     details: [
@@ -75,7 +93,7 @@ export const projects = [
       'Mistral-7B-Instruct running locally through Ollama',
       'RAGAS evaluation for relevance and faithfulness',
     ],
-    stack: ['Python', 'ChromaDB', 'Mistral-7B', 'Ollama', 'RAGAS'],
+    stack: ['Python', 'Hugging Face', 'Transformers', 'ChromaDB', 'Mistral-7B', 'Ollama', 'RAGAS'],
     image: 'images/rag-architecture.png',
     imageAlt: 'Retrieval-augmented generation system architecture',
     imageLabel: 'RAG system architecture',
@@ -87,11 +105,11 @@ export const projects = [
     description:
       'Developed a distributed messaging application across a three-server mesh with encrypted communication, cross-server routing, file transfer and failure recovery.',
     details: [
-      'RSA-4096 for secure communication',
-      'SHA-256 verification for transferred files',
-      'Heartbeat-based connection management and server recovery',
+      'RSA-4096 encryption and digital signatures',
+      'SHA-256 file verification',
+      'WebSockets, FastAPI, server recovery and heartbeat-based connection management',
     ],
-    stack: ['Python', 'FastAPI', 'WebSockets', 'PyCryptodome', 'RSA-4096'],
+    stack: ['Python', 'FastAPI', 'WebSockets', 'PyCryptodome', 'RSA-4096', 'SHA-256'],
     image: 'images/socp-architecture.png',
     imageAlt: 'Secure distributed chat system architecture',
     imageLabel: 'Distributed chat architecture',
@@ -115,7 +133,7 @@ export const projects = [
   },
   {
     meta: 'Event-Driven Computing · 2025',
-    title: 'Adelaide Metro Petri Net Simulation',
+    title: 'Concurrent Railway Interlocking Simulation — Adelaide Metro',
     description:
       'Implemented a Java simulation of concurrent train movements through shared track sections, including collision prevention, deadlock detection and directional flow control.',
     details: [
@@ -123,7 +141,7 @@ export const projects = [
       'Collision and deadlock prevention',
       'Correct arrival and exit handling',
     ],
-    stack: ['Java', 'Petri Nets', 'Concurrency', 'Event-driven systems'],
+    stack: ['Java', 'Petri Nets', 'Concurrency', 'Event-Driven Systems', 'Deadlock Detection'],
     image: 'images/petri-net-adelaide.png',
     imageAlt: 'Adelaide Metro Petri Net simulation diagram',
     imageLabel: 'Petri Net or track topology diagram',
@@ -133,24 +151,28 @@ export const projects = [
 
 export const skillGroups = [
   {
-    title: 'Core engineering',
-    skills: ['Java', 'REST APIs', 'Microservices', 'Vert.x', 'RxJava', 'Node.js', 'Python', 'Grails', 'Django'],
+    title: 'Core Engineering',
+    skills: ['Java', 'Python', 'Node.js', 'REST APIs', 'Microservices', 'Vert.x', 'RxJava', 'Grails', 'Django'],
   },
   {
-    title: 'Data & systems',
-    skills: ['SQL', 'MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'DocumentDB', 'Elasticsearch', 'Query optimisation'],
-  },
-  {
-    title: 'Cloud & DevOps',
-    skills: ['AWS EC2', 'Lambda', 'API Gateway', 'S3', 'SQS', 'ECR', 'ECS', 'Docker', 'Kubernetes', 'Jenkins', 'Git', 'CI/CD'],
-  },
-  {
-    title: 'Frontend & UX',
+    title: 'Frontend',
     skills: ['TypeScript', 'JavaScript', 'React', 'Angular', 'HTML5', 'CSS3', 'Responsive UI'],
   },
   {
-    title: 'AI, ML & research',
-    skills: ['PyTorch', 'Scikit-learn', 'Pandas', 'NumPy', 'Transformers', 'RAG', 'ChromaDB', 'RAGAS', 'Ollama', 'Gymnasium'],
+    title: 'Data & Systems',
+    skills: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'DocumentDB', 'Elasticsearch', 'SQL & Query Optimisation'],
+  },
+  {
+    title: 'Cloud & DevOps',
+    skills: ['AWS (EC2, Lambda, API Gateway, S3, SQS, ECR, ECS)', 'Docker', 'Kubernetes', 'GitHub Actions', 'Jenkins', 'Git', 'CI/CD'],
+  },
+  {
+    title: 'AI & Machine Learning',
+    skills: ['Generative AI', 'Large Language Models (LLMs)', 'Transformers', 'RAG', 'Embeddings', 'Vector Databases', 'Prompt Engineering', 'Model Evaluation', 'PyTorch', 'Hugging Face', 'Scikit-learn', 'Pandas', 'NumPy', 'ChromaDB', 'RAGAS', 'Ollama', 'Gymnasium'],
+  },
+  {
+    title: 'AI-Assisted Engineering',
+    skills: ['Claude', 'GitHub Copilot', 'Cursor', 'ChatGPT', 'Gemini'],
   },
 ]
 

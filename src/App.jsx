@@ -24,7 +24,7 @@ import {
 
 const links = {
   github: 'https://github.com/ZisanAalam',
-  linkedin: 'https://www.linkedin.com/in/zisan-aalam-b17438197/',
+  linkedin: 'https://www.linkedin.com/in/zisan-aalam',
   email: 'mailto:aalamzisan@gmail.com',
   resume: './resume/zisan-aalam-resume.pdf',
 }
@@ -119,20 +119,16 @@ function App() {
         <section className="hero section-shell">
           <div className="hero-copy reveal visible">
             <p className="availability"><span /> Adelaide, South Australia · Open to software engineering roles</p>
-            <h1>Software Engineer specializing in backend systems, cloud applications, applied AI/ML, and full-stack development.</h1>
-            <p className="hero-lead">
-              I bring 3+ years of professional experience in enterprise application development,
-              microservices, APIs, data processing, and AWS-based cloud systems. My work combines
-              strong backend engineering fundamentals with applied experience in data quality,
-              intelligent systems, and AI-enabled problem solving. I am currently completing a
-              Master of Computer Science at the University of Adelaide, with advanced study in
-              distributed systems, secure programming, networking, AI, and software architecture.
+            <h1>Software Engineer | Full-Stack • Cloud • AI/ML</h1>
+            <p className="hero-lead">Software Engineer building full-stack applications, cloud systems and AI/ML solutions.</p>
+            <p className="hero-support">
+              Software Engineer with 3+ years of experience building and supporting full-stack applications, REST APIs, microservices and AWS-based systems. Experienced across Java, Node.js, React, Angular, Vert.x, databases, automation and cloud services, with postgraduate study in machine learning, Generative AI, distributed systems and secure software engineering.
             </p>
 
             <div className="hero-actions">
-              <a className="button primary" href="#experience">View experience <ArrowRight /></a>
+              <a className="button primary" href="#projects">View my work <ArrowRight /></a>
               <a className="button secondary" href={links.resume} target="_blank" rel="noreferrer">
-                Download résumé <Download />
+                Download Resume <Download />
               </a>
             </div>
 
@@ -164,10 +160,7 @@ function App() {
             </div>
             <div className="about-story reveal">
               <p>
-                I enjoy translating complex technical challenges into dependable, maintainable systems
-                that combine strong engineering discipline with practical business value. My work spans
-                backend architecture, cloud-enabled service delivery, data-intensive applications, and
-                applied AI/ML solutions that support real-world decision making.
+                I enjoy turning complex technical problems into reliable, maintainable software. My experience spans backend services, cloud infrastructure, data-intensive applications and full-stack development, while my postgraduate work has expanded into AI/ML, distributed systems and secure software engineering.
               </p>
               <div className="about-signals">
                 <span>Backend systems</span>
@@ -248,6 +241,7 @@ function App() {
                   <div className="project-content">
                     <p className="project-meta">{project.meta}</p>
                     <h3>{project.title}</h3>
+                    {project.partner && <p className="project-partner">Industry Partner: {project.partner}</p>}
                     <p className="project-description">{project.description}</p>
                     <ul className="project-details">
                       {project.details.map((item) => <li key={item}>{item}</li>)}
@@ -300,10 +294,10 @@ function App() {
                 <div className="education-detail">
                   <p><strong>GPA 6.417 / 7.0</strong></p>
                   <p>
-                    Current coursework includes Distributed Systems, Event-Driven Computing, Secure
-                    Programming, Secure Software Engineering, Computer Networking, Generative AI,
-                    and ICT Master Capstone Project. My capstone work with SA Power Networks focuses
-                    on data quality and reliability modelling for infrastructure decision support.
+                    <strong>Current:</strong> Generative Artificial Intelligence, Computer Networking, ICT Master Capstone Project
+                  </p>
+                  <p>
+                    <strong>Selected completed study:</strong> Machine Learning Algorithms, Advanced Topics in AI & ML, Distributed Systems, Event-Driven Computing, Secure Programming, Secure Software Engineering, Specialised Programming
                   </p>
                 </div>
               </article>
@@ -346,9 +340,7 @@ function App() {
               <p className="section-label">Contact</p>
               <h2>Interested in working together?</h2>
               <p>
-                I am currently seeking opportunities in software engineering and application development,
-                with a particular interest in backend systems, cloud platforms, APIs, and intelligent
-                digital products.
+                I’m currently seeking opportunities in software engineering, cloud engineering and AI/ML, with a particular interest in backend systems, cloud platforms, APIs and AI-enabled applications.
               </p>
             </div>
             <div className="contact-actions">
