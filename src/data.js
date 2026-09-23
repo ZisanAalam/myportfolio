@@ -179,22 +179,22 @@ export const skillGroups = [
 export const certifications = [
   {
     title: 'Server-side Development with Node.js, Express and MongoDB - HKUST',
-    url: 'https://www.coursera.org/account/accomplishments/verify/Q5T6W2CSNERZ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course',
+    url: 'https://coursera.org/share/c5e412683fbdc23bec07c9b95536d35b',
   },
   {
     title: 'Single Page Web Applications with AngularJS - Johns Hopkins University',
-    url: 'https://www.coursera.org/account/accomplishments/verify/KCTH22GH76Y3',
+    url: 'https://coursera.org/share/12e36a407b7657595c1749aa57fe2949',
   },
   {
     title: 'Java for Android - Vanderbilt University',
-    url: 'https://www.coursera.org/account/accomplishments/verify/A7Z7E6HVKXE5',
+    url: 'https://coursera.org/share/f54d4e6caeb2ee1a6c378cae62be4265',
   },
   {
     title: 'Introduction to Data Science in Python - University of Michigan',
-    url: 'https://www.coursera.org/account/accomplishments/verify/GTEWECCRBEZK',
+    url: 'https://coursera.org/share/389b465913216c260c73df5bd7f6d12e',
   },
   {
     title: 'Digital Footprint - University of Edinburgh',
-    url: 'https://www.coursera.org/account/accomplishments/verify/SKAZKJ6G49KU',
+    url: 'https://coursera.org/share/9478ff3ff84db9a137e528edcc7f8a9a',
   },
 ]
